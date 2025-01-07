@@ -1,5 +1,5 @@
 # C Training
-Generic C training for Softnautics.
+Generic C training for Moschip Embedded Team.
 
 # C Training document
 Go through [training](./docs/training.md) document and complete tasks and assignments as per training document.
