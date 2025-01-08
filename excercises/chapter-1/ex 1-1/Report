@@ -1,0 +1,44 @@
+/*
+By Rushikesh Toke Report
+Date 07/01/2025
+*/
+
+----------------Removing include file--------------------------------
+
+task1.c:9:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+    9 |         printf("Hello World");
+      |         ^~~~~~
+task1.c:1:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+  +++ |+#include <stdio.h>
+    1 | /*
+task1.c:9:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+    9 |         printf("Hello World");
+      |         ^~~~~~
+task1.c:9:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+
+
+
+
+------------------Removing Double Quotes--------------------------------
+
+task1.c:9:16: error: ‘Hello’ undeclared (first use in this function); did you mean ‘ftello’?
+    9 |         printf(Hello World);
+      |                ^~~~~
+      |                ftello
+task1.c:9:16: note: each undeclared identifier is reported only once for each function it appears in
+task1.c:9:21: error: expected ‘)’ before ‘World’
+    9 |         printf(Hello World);
+      |               ~     ^~~~~~
+
+----------------------------------Removing Semicolon--------------------------------
+task1.c:9:30: error: expected ‘;’ before ‘}’ token
+    9 |         printf("Hello World")
+      |                              ^
+      |                              ;
+   10 | }
+
+-----------------------------------Removing int function--------------------------------
+task1.c:7:2: warning: return type defaults to ‘int’ [-Wimplicit-int]
+    7 |  main()
+      |  ^~~~
+
